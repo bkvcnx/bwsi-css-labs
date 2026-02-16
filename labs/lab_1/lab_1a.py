@@ -1,3 +1,4 @@
+#This is to simulate a change made on a robot: robot_speed = 5 # m/s
 """
 lab_1a.py
 
@@ -11,6 +12,6 @@ def main():
     name = "Becky Chen" # TODO: Insert your name between the double quotes
 
     print(f"{name}, Welcome to the CSS course!")
-name = "Becky Chen" # TODO: Insert your name between
+
 if __name__ == "__main__":
     main()

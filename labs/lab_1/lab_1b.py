@@ -47,16 +47,20 @@ def request_sanitized_number(prompt: str) -> float:
 
 def main():
     
-    print(f"===== Simple Calculator =====")
+    print("===== Simple Calculator =====")
 
     # Ask the user for sample input    
     num1 = request_sanitized_number("Enter the first number: ")
     num2 = request_sanitized_number("Enter the second number: ")
-    operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
+    operation = input(
+        "Enter the operation (add, subtract, multiply, divide): "
+        ).strip().lower()
 
     # Perform the calculation and display the result
     result = simple_calculator(operation, num1, num2)
-    print(f"The result of {operation}ing {num1} and {num2} is: {result}")
+    print(
+        f"The result of {operation}ing {num1} and {num2} is: {result}"
+        )
 
 
 if __name__ == "__main__":
